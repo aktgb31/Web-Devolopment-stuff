@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jvs.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="height: 360px; width: 640px;">
+      <video id='my-video' style="width: 640px; height: 360px;">
+         
+       <source id="s360" src='https://s16.bigcdn.cc/pubs/5f8dd53a3980e3.52344546/360.mp4' type='video/mp4' />
+    <!--      <source  id='s720' src='' title='720p' type='video/mp4' />
+          <source  id='s1080' src='' title='1080p' type='video/mp4' />-->
+      </video>
+      </div>
+   <!-- <script type="text/javascript">
+      var S360=document.getElementById("s360");
+    // var S720=document.getElementById("s720");
+     // var S1080=document.getElementById("s1080");
+      document.body.onload=getdata();
+    
+              var text;
+              async function getdata(){ 
+              let response=await fetch("https://mydaddy.cc/video/ef003c7754ea2e6eca/");
+              text = await response.text();
+              var te=find("a href='//","<")
+              console.log(te);
+              S360.src='https:'+te[0];
+        //      S720.src='https:'+te[1];
+          //    S1080.src='https:'+te[te.length-1];        
+              var v=document.getElementById("my-video");
+              v.load();
+              v.play();
+            }
+              function find(x,y){
+                  var links=[];
+                  var temp=text.split(y);
+                  for(let i=0;i<temp.length;i++){
+                      let count=0;
+                          for(let j=0;j<x.length;j++){
+                          if(x[j]==temp[i][j]){
+                              count++;
+                          }
+                          if(count==x.length){
+                              links.push(temp[i].split("'")[1]);
+                          }
+                      }
+                  }
+                  console.log(links);
+                  return links;
+                }</script>
+              -->  </body>
+</html>
