@@ -48,8 +48,6 @@ const Batch = db.define("batch", {
     primaryKey: true,
   },
   year: DataTypes.INTEGER(4),
-  start: DataTypes.DATE,
-  end: DataTypes.DATE,
 });
 
 Batch.belongsTo(Course);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batches</title>
+</head>
+
+<body>
+    <h1>Batches</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Batch</th>
+                <th>Course</th>
+                <th>Center</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each batches as |b|}}
+            <tr>
+                <td>{{b.code}}</td>
+                <td>{{b.courseId}}</td>
+                <td>{{b.centerId}}</td>
+                <td>{{b.year}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+
+</html>
